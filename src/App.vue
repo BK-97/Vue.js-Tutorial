@@ -1,7 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link :to="{name:'about'}">About</router-link> <!-- True Way -->
+    <router-link :to="{name:'about'}">About</router-link> | <!-- True Way -->
+    <router-link :to="{name:'jobs'}">Jobs</router-link> <!-- True Way -->
+
   </nav>
   <router-view/>
 </template>
