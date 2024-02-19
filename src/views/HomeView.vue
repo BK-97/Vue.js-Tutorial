@@ -1,7 +1,9 @@
 <template>
   <div class="home">Home
-    <p ref="p">My name is {{  name }} and my age is {{ age }}</p>
+    <p>My name is {{  name }} and my age is {{ age }}</p>
     <button @click="handleclick"> click me</button>
+    <button @click="age++"> add 1 to age</button>
+    <input type="text" v-model="name">
   </div>
 </template>
 <script>
@@ -11,18 +13,20 @@ export default {
   name: 'HomeView',
   setup(){
 
-    const p =ref(null)
-
-    let name='mario'
-    let age=30
+    let name=ref('mario')
+    let age=ref(30)
 
     const handleclick = () =>{
-      console.log(p.value)
-      p.value.classList.add('test')
-      p.value.textContent='hello'
+      name.value='luigi'
+      age.value=35
     }
     return{
-      name,age,handleclick,p
+      name,age,handleclick
+    }
+  },
+  data(){
+    return {
+      score:5
     }
   }
 } 
