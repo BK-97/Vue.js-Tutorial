@@ -1,22 +1,28 @@
 <template>
   <div class="home">Home
-    <p>My name is {{  name }} and my age is {{ age }}</p>
+    <p ref="p">My name is {{  name }} and my age is {{ age }}</p>
     <button @click="handleclick"> click me</button>
   </div>
 </template>
 <script>
+import { ref } from 'vue'
 
 export default {
   name: 'HomeView',
   setup(){
+
+    const p =ref(null)
+
     let name='mario'
     let age=30
 
     const handleclick = () =>{
-      console.log('you clicked me')
+      console.log(p.value)
+      p.value.classList.add('test')
+      p.value.textContent='hello'
     }
     return{
-      name,age,handleclick
+      name,age,handleclick,p
     }
   }
 } 
