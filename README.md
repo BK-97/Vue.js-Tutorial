@@ -36,18 +36,31 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 -Using VUE-CLI
 
 -Template Refs
+
 -Emiting Custom Events
+
 -Click Event Modifiers
+
 -Slots
+
 -Using Teleport
+
 -Lifecycle Hooks
+
 -Password Validation
+
 -Vue Router
+
 -Dynamic Links
+
 -Redirect & 404 
+
 -Fetching Data
+
 -Using Json Server
+
 -Options API
+
 -The Composition API
 
 ---
