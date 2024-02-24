@@ -19,7 +19,7 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-## what Did I Learn
+## What Did I Learn
 
 -Creating Vue App
 
