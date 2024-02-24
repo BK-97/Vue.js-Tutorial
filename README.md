@@ -22,12 +22,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## what Did I Learn
 
 -Creating Vue App
+
 -Click Events
+
 -Using v-for,v-if,v-model
+
 -Attribute Binding
+
 -Dynamic Classes
+
 -Computed Properties
+
 -Using VUE-CLI
+
 -Template Refs
 -Emiting Custom Events
 -Click Event Modifiers
